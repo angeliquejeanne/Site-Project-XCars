@@ -1,0 +1,339 @@
+.wrapperMain {
+    position: relative;
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+}
+.containerOne .header-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2020/01/20/20/39/car-4781370_960_720.jpg');
+    height: 100vh;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.containerTwo .header-img {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background-image: url('https://cdn.pixabay.com/photo/2021/01/21/11/09/tesla-5937063_960_720.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.containerThree .header-img {
+    position: absolute;
+    top: 200vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/07/13/22/03/its-4335837_960_720.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.containerFour .header-img {
+    position: absolute;
+    top: 300vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background-image: url('https://cdn.pixabay.com/photo/2020/01/20/20/39/car-4781370_960_720.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.containerFive .header-img {
+    position: absolute;
+    top: 400vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background-image: url('https://cdn.pixabay.com/photo/2021/01/21/11/09/tesla-5937063_960_720.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.containerOne header .header-img,
+.containerTwo header .header-img,
+.containerThree header .header-img,
+.containerFour header .header-img,
+.containerFive header .header-img {
+    position: absolute;
+    right: 40%;
+    top: -50px;
+    height: 100%;
+    transform: translateX(50%);
+}
+.containerOne header .header-img img,
+.containerTwo header .header-img img,
+.containerThree header .header-img img,
+.containerFour header .header-img img,
+.containerFive header .header-img img {
+    height: 100%;
+}
+
+header .header-title {
+    margin-bottom: 500px;
+    z-index: 10;
+    position: relative;
+    background-color: rgba(255, 250, 250, 0.2);
+}
+header .header-title h1 {
+    font-weight: 300;
+    font-size: 60px;
+    margin: 0 0 14px;
+    line-height: 70px;
+    color: black;
+}
+header .header-title button {
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 1px solid snow;
+    color: black;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+header .header-title button:hover {
+    background-color: #5A36F5;
+    color: #FFF;
+}
+header .btns {
+    position: absolute;
+    bottom: -55vh;
+    z-index: 2;
+    left: -50px;
+    display: flex;
+    color: black;
+    font-size: 20px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+header .btns .btnOne,
+header .btns .btnTwo {
+    width: 255px;
+    height: 40px;    
+    margin: 0 10px;
+    border-radius: 999px;
+    text-decoration: none;
+    padding: 5px 0;
+}
+header .btns .btnOne {
+    background-color: rgb(65, 65, 65);
+    color: white;
+}
+header .btns .btnOne:hover {
+    background-color: white;
+    color: rgb(65, 65, 65);
+}
+header .btns .btnTwo {
+    background-color: #fff;
+    color: black;
+}
+header .btns .btnTwo:hover {
+    background-color: black;
+    color: #fff;
+}
+header .scroll-btn {
+    position: absolute;
+    bottom: -65vh;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: black;
+    font-size: 20px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+header .scroll-btn:hover {
+    opacity: .5;
+}
+header .scroll-btn {
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px auto -50px;
+}
+header .scroll-btn span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: -12px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: slideBottom 1.5s infinite;
+    animation: slideBottom 1.5s infinite;
+    box-sizing: border-box;
+}
+@-webkit-keyframes slideBottom {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+    header .header-img {
+        right: 0;
+        transform: translateX(0);
+    }
+    header .scroll-btn {
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 10px auto -50px;
+    }
+}
+@media only screen and (max-width: 1124px) {
+    .main-content nav .wrapper .nav-links a, .main-content nav .wrapper .nav-links .navlinks-two a {
+        font-size: 1.1em;
+        padding: 5px;
+    }
+    .main-content nav .wrapper .nav-links .nav-links-two {
+        margin: 0 1vh 0 5vh;
+    }
+    header .header-img {
+        right: -150px;
+    }
+
+    header .header-title {
+        margin-bottom: 300px;
+    }
+    header .scroll-btn {
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 10px auto -50px;
+    }
+}
+@media only screen and (max-width: 875px) {
+  header .header-title h1 {
+    font-size: 45px;
+  }
+  header .scroll-btn {
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px auto -50px;
+}
+}
+@media only screen and (max-width: 768px) {
+  nav .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  header {
+    height: 100vh;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .containerOne header .header-img,
+  .containerTwo header .header-img,
+  .containerThree header .header-img,
+  .containerFour header .header-img,
+  .containerFive header .header-img {
+    position: relative;
+    right: initial;
+    top: 40px;
+    height: 320px;
+    margin-bottom: 70px;
+  }
+  .header-img {
+    position: relative;
+    height: 50vh;
+    min-height: 300px;
+  }
+
+  header .header-title {
+    margin-bottom: 5px;
+  }
+
+  header .header-title h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  header .btns {
+    position: absolute;
+    bottom: -30vh;
+    z-index: 2;
+    display: flex;
+    color: black;
+    font-size: 20px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+    flex-direction: column;
+    left: 0;
+    }
+header .btns .btnOne,
+header .btns .btnTwo {
+    width: 220px;
+    height: 40px;    
+    margin: 10px auto;
+    border-radius: 999px;
+    text-decoration: none;
+    padding: 5px 0;
+}
+header .scroll-btn {
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px auto -50px;
+}
+}
