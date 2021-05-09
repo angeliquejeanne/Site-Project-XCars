@@ -183,8 +183,8 @@ header .scroll-btn span {
     width: 25px;
     height: 25px;
     margin-left: -12px;
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
+    border-left: 5px solid red;
+    border-bottom: 5px solid red;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: slideBottom 1.5s infinite;
