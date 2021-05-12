@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Capriola|Heebo:300,400,700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/main.css">
+
 </head>
 
 <body>
@@ -34,7 +35,7 @@
 
             <div class="wrapper">
                 
-                <p class="logo">Project XCars</p>
+                <a class="logo" href="./index.html">Project XCars</a>
     
                 <div class="nav-links">
                     <a href="#One">Model A</a>
@@ -53,6 +54,40 @@
             </div>
 
         </nav>
+
+    <div class="containerZero" id="Five">
+
+            <video autoplay muted loop class="header-img" id="myVideo">
+                <source src="./img/Car - 9576.mp4" width="100%">
+                Your browser does not support HTML5 video.
+            </video>
+    
+            <div class="wrapperMain">
+    
+                <header>
+                    <div class="header-title headerVideo">
+                        <h1>Project X-Cars</h1>
+    
+                        <div class="sig-tag">
+                        <div class="sig-line"></div>
+                        Come and discover our new project <br>
+                        <button id="myBtn" onclick="myFunction()" style="margin-top: 10px">Pause</button>
+                        </div>
+    
+                        <div class="btns">
+                            <a href="" class="btnOne">Lorem</a>
+                            <a href="" class="btnTwo">Lorem</a>
+                            <a href="#One" class="scroll-btn">
+                                <span></span>
+                            </a>
+                        </div>
+    
+                    </div>
+                </header>
+    
+            </div>
+    
+    </div>
 
     <div class="containerOne" id="One">
 
@@ -193,7 +228,7 @@
                     <div class="btns">
                         <a href="" class="btnOne">Lorem</a>
                         <a href="" class="btnTwo">Lorem</a>
-                        <a href="#One" class="scroll-btn">
+                        <a href="#Zero" class="scroll-btn">
                             <span></span>
                         </a>
                     </div>
@@ -205,12 +240,39 @@
 
     </div>
 </div>
+
+
 <footer>
-    
+    <p>© 2021 Jeanne S. Dev</p>
+    <div class="social-links">
+        <a href="#">
+            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a href="instagram.com">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+    </div>
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
 
 <script src="./script/toggle.js"></script>
+<script>
+    var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
 
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
 </body>
 </html>
