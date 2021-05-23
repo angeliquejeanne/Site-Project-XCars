@@ -1,0 +1,96 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+.main-content{
+    height: 100vh;
+}
+.background {
+    background-image: url(https://cdn.pixabay.com/photo/2017/06/06/13/03/auto-2377221_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: snow;
+    height: 100%;
+}
+.cont-btns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 100px;
+}
+
+button {
+    padding: 12px;
+    margin: 10px;
+    font-size: 25px;
+    border: 3px solid red;
+    background-color: snow;
+    color: red;
+}
+button:hover {
+    border: 3px solid red;
+    background-color: red;
+    color: snow;
+}
+h1 {
+    margin: 3vh auto;
+    text-align: center;
+    font-size: 40px;
+    color: yellow;
+}
+
+.info {
+    font-size: 30px;
+    text-align: center;
+}
+.form-inscription, .form-connection {
+    width: 300px;
+    height: 300px;
+    border: 3px solid red;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: snow;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+label {
+    font-size: 20px;
+}
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    background: rgb(39, 39, 39);
+    border: 3px solid red;
+    color: snow;
+}
+.apparition {
+    display: flex;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 320px) {
+    button {
+        padding: 7px;
+        margin: 8px;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
