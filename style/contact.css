@@ -20,10 +20,10 @@ div, textarea, input {
     background-color: #fff;
     border: 1px solid #cfcfcf;
     border-bottom: 3px solid #ccc;
-    top: 50%;
+    top: 0%;
     left: 50%;
     position: relative;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 30%);
 }
 
 .row {
@@ -160,7 +160,7 @@ form small {
     .containerContact {
         top: 10%;
         left: 0;
-        transform: translate(0, 10%);
+        transform: translate(0, 15%);
     }
 }
 @media only screen and (max-width: 480px) {
@@ -201,8 +201,8 @@ form small {
 }
 @media (min-width: 480px) and (max-width:1024px){
     .containerContact {
-        top: -15%;
+        top: 0%;
         left: 50%;
-        transform: translate(-50%, 30%);
+        transform: translate(-50%, 20%);
     }
 }

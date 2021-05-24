@@ -351,7 +351,8 @@ header .btns .btnTwo {
     margin: 10px auto;
     border-radius: 999px;
     text-decoration: none;
-    padding: 5px 0;
+    padding: 10px 0;
+    font-size: 14px;
 }
 header .scroll-btn {
     bottom: 0px;
